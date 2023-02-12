@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Header */
+
+header{
+    height: 75px;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo{
+    width: 50px;
+}
+
+#barra_navegacao{
+    display: flex;
+    align-items: center;
+}
+
+#barra_navegacao li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#barra_navegacao a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Página principal */
+
+main{
+    width: 800px;
+    margin: 20px auto;
+}
+
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.delete{
+    display: inline-block;
+}
+
+/* Sem contatos */
+.no-contact{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.no-contact a:visited{
+    color: rgb(0, 0, 255);
+}
+
+/* Lista de contatos */
+
+#contacts-list{
+    width: 100%;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#contacts-list th, #contacts-list td{
+    text-align: left;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+#contacts-list th{
+    font-size: 1.25em;
+}
+
+#contacts-list .actions{
+    text-align: right;
+}
+
+#contacts-list .action{
+    color: #007bff;
+    margin-left: 5px;
+}
+
+#contacts-list th{
+    margin: 0px 0px;
+}
+
+#contacts-list td{
+    padding-top: 10px;
+}
+
+#contacts-list .delete{
+    border: none;
+    cursor: pointer;
+}
+
+/* Informações detalhadas */
+
+#info label{
+    display: block;
+}
+
+#info .field *{
+    margin-top: 5px;
+}
+
+#info .field input, #info textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+#info .field input{
+    height: 2em;
+}
+
+#btn-add, #btn-edit{
+    display: block;
+    cursor: pointer;
+    background-color: #007bff;
+    margin: 5px auto;
+    font-size: 1.5em;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+#btn-add:hover, #btn-edit:hover{
+    color: #007bff;
+    background-color: #FFF;
+    border: 1px solid #007bff;
+}
+
+/* Botão voltar */
+
+.btn-back{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #007bff;
+    margin: 5px auto;
+    font-size: 1em;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    transition: 0.2s;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.btn-back:hover{
+    color: #007bff;
+    background-color: #FFF;
+    border: 1px solid #007bff;
+}
+
+/* Mensagem de aviso */
+
+#info-msg{
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 136, 0);
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+
+    .home{
+        display: none;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #barra_navegacao{
+        font-size: 2em;
+    }
+    
+    main{
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    #contact-list {
+        display: none;
+    }
+
+    #contacts-list td{
+        font-size: 1.3em;
+    }
+
+    .actions{
+        font-size: 2em;
+    }
+
+    .id{
+        display: none;
+    }
+}
