@@ -12,4 +12,14 @@ Para realizar a criação do projeto, foi utilizado as seguintes ferramentas:
 
 -Visual Studio Code (VS-Code);
 
+-HTML;
+
+-CSS;
+
+-FontAwesome;
+
+-PHP.
+
+Meus contatos estarão no rodapé do projeto e estarei a disposição para qualquer eventual dúvida.
+
 Qualquer dúvida estou a disposição!
